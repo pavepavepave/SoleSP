@@ -1,0 +1,43 @@
+﻿<Window x:Class="SoleSP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoleSP"
+        mc:Ignorable="d"
+        Title="Sole 6%" Height="300" Width="500" ResizeMode="CanMinimize">
+    <Grid x:Name="MainGround" Height="280">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="155"/>
+            <ColumnDefinition Width="155"/>
+            <ColumnDefinition Width="155"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="QuarterTXT" Grid.Row="0" Grid.Column="0" Text="КВ" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="FirstQuarterTXT" Grid.Row="1" Grid.Column="0" Text="I" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="SecondQuarterTXT" Grid.Row="2" Grid.Column="0" Text="II" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="ThirdQuarterTXT" Grid.Row="3" Grid.Column="0" Text="III" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="FourthQuarterTXT" Grid.Row="4" Grid.Column="0" Text="IV" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="GrandTotalTXT" Grid.Row="5" Grid.Column="0" Text="Итого" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock x:Name="IncomeTXT" Grid.Row="0" Grid.Column="1" Text="Доход" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="InsuranceTXT" Grid.Row="0" Grid.Column="2" Text="СВ" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="TaxTXT" Grid.Row="0" Grid.Column="3" Text="К уплате" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Name="QuarterFirstEntering" Grid.Row="1" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" >доход</TextBox>
+        <TextBox Name="QuarterSecondEntering" Grid.Row="2" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" >доход</TextBox>
+        <TextBox Name="QuarterThirdEntering" Grid.Row="3" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" >доход</TextBox>
+        <TextBox Name="QuarterFourthEntering" Grid.Row="4" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" >доход</TextBox>
+        <TextBlock x:Name="QuarterTotalSum"  Grid.Column="1" HorizontalAlignment="Center" Grid.Row="5" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
+
+
+
+    </Grid>
+</Window>
