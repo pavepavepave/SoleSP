@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SoleSP"
         mc:Ignorable="d"
-        Title="Sole 6%" Height="300" Width="500" ResizeMode="CanMinimize">
+        Title="Sole 6%" Height="329" Width="537" ResizeMode="CanMinimize" Icon="img/calculator-icon.png">
     <Grid x:Name="MainGround" Height="280">
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
@@ -13,6 +13,7 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
+            <RowDefinition Height="25"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -21,21 +22,39 @@
             <ColumnDefinition Width="155"/>
             <ColumnDefinition Width="155"/>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="QuarterTXT" Grid.Row="0" Grid.Column="0" Text="КВ" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock x:Name="FirstQuarterTXT" Grid.Row="1" Grid.Column="0" Text="I" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock x:Name="SecondQuarterTXT" Grid.Row="2" Grid.Column="0" Text="II" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock x:Name="ThirdQuarterTXT" Grid.Row="3" Grid.Column="0" Text="III" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock x:Name="FourthQuarterTXT" Grid.Row="4" Grid.Column="0" Text="IV" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock x:Name="GrandTotalTXT" Grid.Row="5" Grid.Column="0" Text="Итого" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <TextBlock x:Name="IncomeTXT" Grid.Row="0" Grid.Column="1" Text="Доход" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock x:Name="InsuranceTXT" Grid.Row="0" Grid.Column="2" Text="СВ" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock x:Name="TaxTXT" Grid.Row="0" Grid.Column="3" Text="К уплате" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Name="QuarterFirstEntering" Grid.Row="1" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" >доход</TextBox>
-        <TextBox Name="QuarterSecondEntering" Grid.Row="2" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" >доход</TextBox>
-        <TextBox Name="QuarterThirdEntering" Grid.Row="3" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" >доход</TextBox>
-        <TextBox Name="QuarterFourthEntering" Grid.Row="4" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" >доход</TextBox>
-        <TextBlock x:Name="QuarterTotalSum"  Grid.Column="1" HorizontalAlignment="Center" Grid.Row="5" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
+        <TextBlock x:Name="QuarterTXT" Text="КВ" HorizontalAlignment="Center" VerticalAlignment="Center" Height="15" Width="13"/>
+        <TextBlock x:Name="FirstQuarterTXT" Grid.Row="1" Text="I" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Width="3"/>
+        <TextBlock x:Name="SecondQuarterTXT" Grid.Row="2" Text="II" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Width="7"/>
+        <TextBlock x:Name="ThirdQuarterTXT" Grid.Row="3" Text="III" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Width="9"/>
+        <TextBlock x:Name="FourthQuarterTXT" Grid.Row="4" Text="IV" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Width="11"/>
+        <TextBlock x:Name="GrandTotalTXT" Grid.Row="5" Text="Итого" HorizontalAlignment="Center" VerticalAlignment="Center" Height="15" Width="33"/>
+
+        <TextBlock x:Name="IncomeTXT" Grid.Column="1" Text="Доход" HorizontalAlignment="Center" VerticalAlignment="Center" Height="15" Width="35"/>
+        <TextBlock x:Name="InsuranceTXT" Grid.Column="2" Text="СВ" HorizontalAlignment="Center" VerticalAlignment="Center" Height="15" Width="15"/>
+        <TextBlock x:Name="TaxTXT" Grid.Column="3" Text="К уплате" HorizontalAlignment="Center" VerticalAlignment="Center" Height="15" Width="46"/>
+
+        <TextBox x:Name="IncomeFirstRes" Grid.Row="1" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="200000" Height="22" Width="155" />
+        <TextBox x:Name="IncomeSecondRes" Grid.Row="2" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="250000" Height="22" Width="155" />
+        <TextBox x:Name="IncomeThirdRes" Grid.Row="3" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="300000" Height="22" Width="155" />
+        <TextBox x:Name="IncomeFourthRes" Grid.Row="4" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="175000" Height="22" Width="155" />
+        <TextBox x:Name="IncomeYearRes" Grid.Row="5" Grid.Column="1" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="0" Height="22" Width="155" IsEnabled="False" />
+
+        <TextBox x:Name="InsuranceFirstRes" Grid.Row="1" Grid.Column="2" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="10803" Height="22" Width="155" />
+        <TextBox x:Name="InsuranceSecondRes" Grid.Row="2" Grid.Column="2" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="10803" Height="22" Width="155" />
+        <TextBox x:Name="InsuranceThirthRes" Grid.Row="3" Grid.Column="2" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="21605" Height="22" Width="155" />
+        <TextBox x:Name="InsuranceFourthRes" Grid.Row="4" Grid.Column="2" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="0" Height="22" Width="155" />
+        <TextBox x:Name="InsuranceYearRes" Grid.Row="5" Grid.Column="2" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="0" Height="22" Width="155" IsEnabled="False" />
+
+        <TextBox x:Name="TaxFirstRes" Grid.Row="1" Grid.Column="3" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="0" Height="22" Width="155" IsEnabled="False" />
+        <TextBox x:Name="TaxSecondRes" Grid.Row="2" Grid.Column="3" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="0" Height="22" Width="155" IsEnabled="False" />
+        <TextBox x:Name="TaxThirdRes" Grid.Row="3" Grid.Column="3" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="0" Height="22" Width="155" IsEnabled="False" />
+        <TextBox x:Name="TaxFourthRes" Grid.Row="4" Grid.Column="3" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="0" Height="22" Width="155" IsEnabled="False" />
+        <TextBox x:Name="TaxYearRes" Grid.Row="5" Grid.Column="3" MinWidth="155" HorizontalAlignment="Center" VerticalAlignment="Center" Text="0" Height="22" Width="155" IsEnabled="False" />
+        
+        
+        <Button x:Name="ResultButton" Grid.Column="1" Content="Рассчитать" HorizontalAlignment="Left" Margin="10,4,0,0" Grid.Row="6" VerticalAlignment="Top" Width="129" Height="22" Click="ResultButton_Click"/>
+        <Button x:Name="InformationButton" Grid.Column="3" Content="Справка" HorizontalAlignment="Left" Margin="10,4,0,0" Grid.Row="6" VerticalAlignment="Top" Width="145" Height="22" Click="InformationButton_Click"/>
 
 
 
